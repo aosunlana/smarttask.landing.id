@@ -1,0 +1,12 @@
+# Build artifact — regenerated on demand for shared-hosting deploys
+deploy.zip
+deploy-stage/
+
+# Dev tooling
+node_modules/
+.claude/
+.vercel/
+
+# Secrets — never commit (Brevo key lives in Vercel env / brevo-key.php outside webroot)
+brevo-key.php
+.env
