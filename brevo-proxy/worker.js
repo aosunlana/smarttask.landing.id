@@ -75,7 +75,9 @@ export default {
   },
 };
 
-const ALLOWED_ATTRS = ['FULLNAME', 'WHATSAPP', 'LOCATION', 'ROLE', 'TRADE_CATEGORY', 'LANGUAGE', 'GIVEAWAY_ENTRY'];
+// 'WHATSAPP' is a Brevo RESERVED IDENTIFIER — sending it as an attribute causes a
+// 404 document_not_found merge error. Use the custom TEXT attribute 'WHATSAPP_NUMBER'.
+const ALLOWED_ATTRS = ['FULLNAME', 'WHATSAPP_NUMBER', 'LOCATION', 'ROLE', 'TRADE_CATEGORY', 'LANGUAGE', 'GIVEAWAY_ENTRY'];
 
 function sanitizeAttributes(attrs) {
   const out = {};

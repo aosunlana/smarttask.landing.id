@@ -213,7 +213,9 @@ function buildBrevoPayload(data) {
     listIds: listIds,
     attributes: {
       FULLNAME: data.name,
-      WHATSAPP: data.phone,            // Text attribute (Brevo's SMS attr rejects non-E.164)
+      WHATSAPP_NUMBER: data.phone,     // Custom TEXT attribute. NB: do NOT use "WHATSAPP" — that
+                                       // is a Brevo RESERVED IDENTIFIER and triggers a contact-merge
+                                       // lookup that fails with 404 document_not_found.
       LOCATION: data.location,
       ROLE: data.role,                 // customer | tasker | both
       TRADE_CATEGORY: data.category || '',

@@ -8,8 +8,10 @@ publicly readable; a leaked key gives full access to the contact base).
 
 1. **Create contact attributes** — Brevo dashboard → Contacts → Settings →
    Contact attributes. Add these (all type **Text**):
-   `FULLNAME`, `WHATSAPP`, `LOCATION`, `ROLE`, `TRADE_CATEGORY`, `LANGUAGE`,
+   `FULLNAME`, `WHATSAPP_NUMBER`, `LOCATION`, `ROLE`, `TRADE_CATEGORY`, `LANGUAGE`,
    `GIVEAWAY_ENTRY`
+   ⚠️ Do **not** name it `WHATSAPP` — that is a Brevo *reserved identifier* and the
+   submission fails with `404 document_not_found / "Contact does not exist"`.
 2. **Create lists — one per "tag"** — Contacts → Lists (folder `SmartTasker_Indonesia`):
    - `PreLaunch_SmartTasker_Lead_Signup` — ID **4** (master: every form submission) ✅ created
    - `PreLaunch_SmartTasker_Lead_Signup_En` — used the site in English → English email automations ✅ created

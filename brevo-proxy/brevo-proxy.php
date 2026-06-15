@@ -58,7 +58,9 @@ if (!is_array($payload) || empty($payload['email']) || !filter_var($payload['ema
     exit;
 }
 
-$allowedAttrs = ['FULLNAME', 'WHATSAPP', 'LOCATION', 'ROLE', 'TRADE_CATEGORY', 'LANGUAGE', 'GIVEAWAY_ENTRY'];
+// 'WHATSAPP' is a Brevo RESERVED IDENTIFIER — sending it as an attribute causes a
+// 404 document_not_found merge error. Use the custom TEXT attribute 'WHATSAPP_NUMBER'.
+$allowedAttrs = ['FULLNAME', 'WHATSAPP_NUMBER', 'LOCATION', 'ROLE', 'TRADE_CATEGORY', 'LANGUAGE', 'GIVEAWAY_ENTRY'];
 $attributes = [];
 if (isset($payload['attributes']) && is_array($payload['attributes'])) {
     foreach ($allowedAttrs as $attr) {

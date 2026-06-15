@@ -11,7 +11,10 @@
  *      (same-origin — no CORS configuration needed)
  */
 
-const ALLOWED_ATTRS = ['FULLNAME', 'WHATSAPP', 'LOCATION', 'ROLE', 'TRADE_CATEGORY', 'LANGUAGE', 'GIVEAWAY_ENTRY'];
+// NB: 'WHATSAPP' is a Brevo RESERVED IDENTIFIER (like SMS/EMAIL/EXT_ID); sending it as an
+// attribute makes Brevo do a WhatsApp-identifier merge lookup that fails with
+// 404 document_not_found. Use the custom TEXT attribute 'WHATSAPP_NUMBER' instead.
+const ALLOWED_ATTRS = ['FULLNAME', 'WHATSAPP_NUMBER', 'LOCATION', 'ROLE', 'TRADE_CATEGORY', 'LANGUAGE', 'GIVEAWAY_ENTRY'];
 
 // Extra origins allowed to use this proxy (the deployment's own host is always allowed)
 const EXTRA_ORIGINS = ['https://smarttasker.id', 'https://www.smarttasker.id'];
