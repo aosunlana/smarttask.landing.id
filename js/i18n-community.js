@@ -4,28 +4,22 @@
  *
  * Usage: loaded BEFORE js/main.js so Object.assign merges into the global i18n object.
  *
- * Adaptation notes applied throughout:
- *   - Australia/Australian → Indonesia/Indonesian
- *   - smarttasker.au → smarttasker.id
- *   - hello@smarttasker.au → supportindonesia@smarttasker.au
- *   - Australian-law references are flagged with HTML comments: LEGAL REVIEW REQUIRED
- *   - AUD/$ amounts: kept as-is with [TO BE LOCALISED] marker
- *   - App-store/download references → waitlist references
- *   - "Smarttasker" normalised to "SmartTasker" throughout
+ * Content reflects the finalised SmartTasker Indonesia Community Guidelines
+ * (last updated 13 June 2026). English from the source document; Bahasa Indonesia
+ * from the official Indonesian source document.
  *
- * Bahasa Indonesia translations: machine-assisted — PENDING PROFESSIONAL LEGAL REVIEW
+ * Section order follows the document: 1, 2, 3, 4, 6 (Cancellation Policy),
+ * 5 (Pricing, Fees and Payouts), 7, 8, 9, 10, 11.
  */
 
 /* global i18n */
 Object.assign(i18n.en, {
 
-  /* ── Page draft notice ─────────────────────────────────────── */
-
   /* ── Page hero ─────────────────────────────────────────────── */
   "community.hero.title": "Community Guidelines",
 
   /* ── Last updated ───────────────────────────────────────────── */
-  "community.updated": "Last updated: 22 November 2024",
+  "community.updated": "Last updated: 13 June 2026",
 
   /* ── Intro block ────────────────────────────────────────────── */
   "community.intro": `<p>SmartTasker is here to help facilitate a reliable, safe, and successful environment in order to connect people ready to work with people who need work done.</p>
@@ -95,8 +89,30 @@ Object.assign(i18n.en, {
 <p>Taking tasks off platform may seem like you are saving money on Tasker Service Fees, however it will lead to your account being cancelled and thus you will lose access to a platform that provides you income potential.</p>
 <p>Users may cancel tasks as part of attempting to take tasks off the platform. Repeatedly cancelling tasks may result in you gaining a poor star rating and profile review impacting your ability to win work or result in your account being suspended or banned.</p>`,
 
+  /* ── Section 6 — SmartTasker Cancellation Policy ───────────── */
+  "community.s6.heading": "6. SmartTasker Cancellation Policy",
+  "community.s6.body": `<p>At SmartTasker, we want to maintain a consistent and reliable marketplace for all Posters and Taskers.</p>
+<p>A clear and fair cancellation policy helps protect both Posters and Taskers and allows us to set clear expectations as to what happens when a task is cancelled.</p>
+<p><strong>Responsibilities</strong></p>
+<p>When using the SmartTasker platform, we expect each of our valued Posters and Taskers to uphold certain responsibilities. Cancelled tasks may trigger certain fees (see Service and Fees) which are payable depending on who is responsible for the cancellation.</p>
+<p><strong>Tasker Responsibilities</strong></p>
+<p>When using the SmartTasker platform, we expect Taskers to use their expertise and skills to carefully guide Posters through the journey of having a task scoped, agreed, and completed. This journey includes helping Posters understand the involved skill, scope, timing, and price of the task they need completed, alongside completing the task in a professional manner.</p>
+<p><strong>Poster Responsibilities</strong></p>
+<p>When using the SmartTasker platform, we expect Posters will provide Taskers with as much information as possible on the task that you need completed. This includes describing your task with a reasonable amount of detail, providing pictures where they are helpful and answering any questions that your Tasker may have. Ultimately, the more information you give, the more likely that the task will be completed to your expectations.</p>
+<p><strong>Services &amp; Fees</strong></p>
+<p><strong>Booking Fee</strong> In the event that the Tasker cancels your task, and the Poster is not responsible for the cancellation, the Booking fee will be refunded to the Poster. Processing of your refund to your original payment method can take up to 10 business days to complete.</p>
+<p><strong>Cancellation Policy</strong></p>
+<p><strong>Posters</strong></p>
+<p>As a Poster, if you choose to cancel a task, you will be refunded the amount of the task that has been cancelled. As noted in the Booking Fee section above, the Booking fee will be non-refundable.</p>
+<p><strong>Tasker</strong></p>
+<p>As a Tasker, if you choose to cancel a task, a cancellation fee may be charged equal to the value of the Booking fee paid by the Poster for that relevant task.</p>
+<p><strong>Automated cancellations</strong></p>
+<p>When a Poster or Tasker submits a request to cancel a task, the request is sent to the other party to approve or reject the cancellation. In the case where an acceptance or rejection is not received by that party within 48 hours from the submitted request, the task will be cancelled automatically, and a party will be held responsible for the cancellation fee based on the information provided through the cancellation request.</p>
+<p><strong>Repeated Cancellations</strong></p>
+<p>If you repeatedly cancel tasks, your account may be suspended at our sole discretion. Account suspensions can range from temporary suspensions (i.e. 1 week suspension) to permanent suspensions.</p>
+<p>Ratings and reviews also provide valuable feedback that can help Posters and Taskers inform their decisions about which person to work with. Posters are able to provide a review on a cancelled task as well as provide feedback to SmartTasker which we may act on at our sole discretion. Cancellations impact your star rating and reliability scores on the marketplace which can reduce your ability to win tasks.</p>`,
+
   /* ── Section 5 — Pricing, Fees and Payouts ─────────────────── */
-  /* LEGAL REVIEW REQUIRED: Australian-law reference — fee amounts in AUD; Indonesian counsel to localise fee structures, GST references, and Stripe usage under Indonesian payment regulations (OJK/BI) */
   "community.s5.heading": "5. Pricing, Fees and Payouts",
   "community.s5.body": `<p>It's important to understand how pricing and payouts work on SmartTasker.</p>
 <ul>
@@ -109,45 +125,15 @@ Object.assign(i18n.en, {
 <p><strong>Tasker Service Fees</strong></p>
 <p>At SmartTasker we believe in transparency. That is why our fees are readily available and easy to understand. Our Tasker service fees are typically 25% cheaper than our competition.</p>
 <p>Our Tasker Service fees are charged at the completion of the task and deducted from the Tasker payment.</p>
-<p>Taskers achieve performance tiers based on how many dollars they have earned in the last 30 days. The Service fee depends on the Tier.</p>
+<p>Taskers achieve performance tiers based on how much they have earned in the last 30 days. The Service fee depends on the Tier.</p>
 <ul>
-  <li><strong>Task Starter</strong> are users who have earnt between $0 and $799 in the last 30 days. The service fee for this tier is 2.95% + $2.55 plus GST.</li>
-  <li><strong>Task Pro</strong> are users who have earnt between $800 and $2,499 in the last 30 days. The service fee for this tier is 2.95% + $2.55 plus GST.</li>
-  <li><strong>Task Expert</strong> are users who have earnt between $2,500 and $4,999 in the last 30 days. The service fee for this tier is 2.95% + $2.55 plus GST.</li>
-  <li><strong>Task Master</strong> are users who have earnt over $5,000 in the last 30 days. The service fee for this tier is 1.95% + $2.55 plus GST.</li>
+  <li><strong>Task Starter</strong> are users who have earnt between Rp0 and Rp1.000.000 in the last 30 days. The service fee for this tier is 20% + PPN.</li>
+  <li><strong>Task Pro</strong> are users who have earnt between Rp1.000.001 and Rp1.500.000 in the last 30 days. The service fee for this tier is 18% + PPN.</li>
+  <li><strong>Task Expert</strong> are users who have earnt between Rp1.500.001 and Rp2.000.000 in the last 30 days. The service fee for this tier is 20% + PPN.</li>
+  <li><strong>Task Master</strong> are users who have earnt Rp2.000.000 and above in the last 30 days. The service fee for this tier is 20% + PPN.</li>
 </ul>
 <p><strong>Poster Fees</strong></p>
-<p><strong>Booking Fee</strong> SmartTasker charges a $0 Booking fee to posters for the creation and listing of Tasks.</p>
-<p><strong>Milestone Transaction Fee</strong> SmartTasker charges a small transaction fee to process and manage milestone payments. This transaction fee is charged on the second Milestone payment and then on all subsequent Milestone payments for that task. The fee is calculated as:</p>
-<ul>
-  <li>2% of the Milestone cost plus GST</li>
-  <li>Example: Poster accepts a Task offer of $5,000 and elects to pay via 2 Milestone payments. The first Milestone payment is Milestone cost $2,500 + Booking fee $25 + GST. For the second Milestone payment the cost is Milestone cost $2,500 + 2% transaction fee of $50 + GST.</li>
-</ul>`,
-
-  /* ── Section 6 — Cancellation Policy ───────────────────────── */
-  /* LEGAL REVIEW REQUIRED: Australian-law reference — cancellation fee structure and escrow provider (Stripe) usage; Indonesian counsel to confirm compliance with OJK/Bank Indonesia regulations and applicable consumer protection law */
-  "community.s6.heading": "6. SmartTasker Cancellation Policy",
-  "community.s6.body": `<p>At SmartTasker, we want to maintain a consistent and reliable marketplace for all Posters and Taskers.</p>
-<p>A clear and fair cancellation policy helps protect both Posters and Taskers and allows us to set clear expectations as to what happens when a task is cancelled.</p>
-<p><strong>Responsibilities</strong></p>
-<p>When using the SmartTasker platform, we expect each of our valued Posters and Taskers to uphold certain responsibilities. Cancelled tasks may trigger certain fees (see Service and Fees) which are payable depending on who is responsible for the cancellation.</p>
-<p><strong>Tasker Responsibilities</strong></p>
-<p>When using the SmartTasker platform, we expect Taskers to use their expertise and skills to carefully guide Posters through the journey of having a task scoped, agreed, and completed. This journey includes helping Posters understand the involved skill, scope, timing, and price of the task they need completed, alongside completing the task in a professional manner.</p>
-<p><strong>Poster Responsibilities</strong></p>
-<p>When using the SmartTasker platform, we expect Posters will provide Taskers with as much information as possible on the task that you need completed. This includes describing your task with a reasonable amount of detail, providing pictures where they are helpful and answering any questions that your Tasker may have. Ultimately, the more information you give, the more likely that the task will be completed to your expectations.</p>
-<p><strong>Services &amp; Fees</strong></p>
-<p><strong>Booking Fee</strong> In the event that the Tasker cancels your task, and the Poster is not responsible for the cancellation, the Booking fee will be refunded to the Poster. Processing of your refund to your original payment method can take up to 10 business days to complete.</p>
-<p><strong>Milestone Transaction Fee</strong> In the event that the Tasker cancels your task and you have Milestone Payments set up, the Milestone Transaction fee will not be refunded to the Poster. This is a fee retained by our Payments Provider and unable to be refunded.</p>
-<p><strong>Cancellation Policy</strong></p>
-<p><strong>Posters</strong></p>
-<p>As a Poster, if you choose to cancel a task, you will be refunded the amount of the task that has been cancelled. As noted in the Booking Fee section above, the Booking fee will be non-refundable. You will also be charged a 2% transaction fee.</p>
-<p><strong>Tasker</strong></p>
-<p>As a Tasker, if you choose to cancel a task, a cancellation fee may be charged equal to the value of the Booking fee paid by the Poster for that relevant task. You will also be charged a 2% transaction fee. This cancellation fee may be automatically deducted from your next payment payout.</p>
-<p><strong>Automated cancellations</strong></p>
-<p>When a Poster or Tasker submits a request to cancel a task, the request is sent to the other party to approve or reject the cancellation. In the case where an acceptance or rejection is not received by that party within 48 hours from the submitted request, the task will be cancelled automatically, and a party will be held responsible for the cancellation fee based on the information provided through the cancellation request.</p>
-<p><strong>Repeated Cancellations</strong></p>
-<p>If you repeatedly cancel tasks, your account may be suspended at our sole discretion. Account suspensions can range from temporary suspensions (i.e. 1 week suspension) to permanent suspensions.</p>
-<p>Ratings and reviews also provide valuable feedback that can help Posters and Taskers inform their decisions about which person to work with. Posters are able to provide a review on a cancelled task as well as provide feedback to SmartTasker which we may act on at our sole discretion. Cancellations impact your star rating and reliability scores on the marketplace which can reduce your ability to win tasks.</p>`,
+<p><strong>Booking Fee</strong> SmartTasker charges a Booking fee to posters for the creation and listing of Tasks when an offer is accepted. The fee is equal to 10% of the Task Offer. The minimum Booking Fee is Rp10.000 and the maximum fee is Rp50.000. These amounts are exclusive of PPN.</p>`,
 
   /* ── Section 7 — Tasker Accountability and Your Reputation ── */
   "community.s7.heading": "7. Tasker Accountability and Your Reputation",
@@ -182,7 +168,6 @@ Object.assign(i18n.en, {
 </ul>`,
 
   /* ── Section 9 — Account Eligibility ───────────────────────── */
-  /* LEGAL REVIEW REQUIRED: Australian-law reference — "legal requirement to enter a legal contract" references Australian contract law; Indonesian counsel to localise per KUHPerdata (Indonesian Civil Code) and applicable Indonesian regulations on minimum contracting age */
   "community.s9.heading": "9. Account Eligibility",
   "community.s9.body": `<p>All Posters need to meet the following requirements to open an account:</p>
 <ul>
@@ -211,60 +196,56 @@ Object.assign(i18n.en, {
 
 });
 
-/* ── Bahasa Indonesia translations ──────────────────────────────
-   Machine-assisted translation — PENDING PROFESSIONAL LEGAL REVIEW
-   ─────────────────────────────────────────────────────────────── */
+/* ── Bahasa Indonesia ───────────────────────────────────────── */
 Object.assign(i18n.id, {
 
-  /* ── Page draft notice ─────────────────────────────────────── */
-
   /* ── Page hero ─────────────────────────────────────────────── */
-  "community.hero.title": "Panduan Komunitas",
+  "community.hero.title": "Pedoman Komunitas",
 
   /* ── Last updated ───────────────────────────────────────────── */
-  "community.updated": "Terakhir diperbarui: 22 November 2024",
+  "community.updated": "Terakhir diperbarui: 13 Juni 2026",
 
   /* ── Intro block ────────────────────────────────────────────── */
-  "community.intro": `<p>SmartTasker hadir untuk memfasilitasi lingkungan yang andal, aman, dan sukses dalam menghubungkan orang-orang yang siap bekerja dengan orang-orang yang membutuhkan pekerjaan dilakukan.</p>
-<p>Penting bagi semua Pengguna untuk mengikuti panduan kami dan bertindak secara etis dan jujur setiap saat guna memastikan semua orang mendapatkan pengalaman yang menyenangkan dan produktif.</p>
-<p>Semua Pengguna harus bekerja sama dengan tim SmartTasker untuk memastikan kami mempertahankan platform yang adil dan jujur. Harap laporkan setiap pelanggaran terhadap Panduan ini kepada tim SmartTasker.</p>
-<p>Panduan ini hadir untuk melindungi Anda, dan kami menganggap serius setiap pelanggarannya. Ketika seseorang melanggar Panduan kami, kami dapat mengambil tindakan untuk menghapus konten, penawaran, menangguhkan, atau bahkan membatalkan akun mereka secara permanen.</p>`,
+  "community.intro": `<p>SmartTasker hadir untuk membantu memfasilitasi lingkungan yang andal, aman, dan sukses untuk menghubungkan orang-orang yang siap bekerja dengan orang-orang yang membutuhkan pekerjaan yang diselesaikan.</p>
+<p>Penting bagi semua Pengguna untuk mengikuti pedoman kami dan bertindak secara etis dan jujur setiap saat untuk memastikan bahwa setiap orang memiliki pengalaman yang menyenangkan dan produktif.</p>
+<p>Semua Pengguna harus bekerja sama dengan tim SmartTasker untuk memastikan kami mempertahankan platform yang adil dan jujur. Harap laporkan pelanggaran apa pun ke Pedoman ke tim SmartTasker.</p>
+<p>Pedoman ini hadir untuk melindungi Anda, dan kami menanggapi pelanggaran tersebut dengan serius. Ketika seseorang melanggar Pedoman kami, kami dapat mengambil tindakan untuk menghapus konten apa pun, penawaran, menangguhkan, atau bahkan membatalkan akun mereka secara permanen.</p>`,
 
-  /* ── Section 1 — Task Posting Guidelines ───────────────────── */
-  "community.s1.heading": "1. Panduan Posting Tugas",
-  "community.s1.body": `<p>SmartTasker hadir untuk membantu Poster menyelesaikan tugas mereka dengan cepat dan efisien. Untuk menciptakan platform yang aman, penuh hormat, dan bermanfaat, panduan berikut harus dipatuhi:</p>
+  /* ── Section 1 — Pedoman posting tugas ─────────────────────── */
+  "community.s1.heading": "1. Pedoman posting tugas",
+  "community.s1.body": `<p>SmartTasker hadir untuk membantu Poster menyelesaikan tugas mereka dengan cepat dan efisien. Untuk menciptakan platform yang aman, hormat, dan bermanfaat, pedoman berikut harus dipatuhi:</p>
 <ul>
   <li>Tugas harus legal</li>
-  <li>Tidak ada barang atau Tugas yang dilarang</li>
+  <li>Tidak ada barang atau Tugas yang dilarang yang diizinkan</li>
   <li>Tidak ada layanan pendamping atau dewasa</li>
-  <li>Tidak ada perjudian atau kegiatan terkait</li>
-  <li>Ruang lingkup, waktu, dan anggaran yang jelas dan akurat diperlukan untuk semua Tugas</li>
+  <li>Tidak ada perjudian atau aktivitas terkait</li>
+  <li>Cakupan yang jelas dan akurat, waktu, dan anggaran yang diperlukan untuk semua Tugas</li>
   <li>Tidak ada iklan</li>
-  <li>Tidak ada Tugas yang berkaitan dengan alkohol atau narkoba</li>
+  <li>Tidak ada Tugas terkait alkohol atau narkoba</li>
 </ul>`,
 
-  /* ── Section 2 — Publicly Sharing Private Information ─────── */
-  "community.s2.heading": "2. Berbagi Informasi Pribadi Secara Publik",
-  "community.s2.body": `<p>Untuk melindungi keselamatan dan keamanan Anda, Anda hanya boleh berbagi informasi kontak pribadi <strong>setelah</strong> Poster menerima penawaran Anda. Hal ini dapat dilakukan melalui sistem pesan pribadi kami.</p>
-<p>Pengguna <strong>tidak boleh</strong> berbagi informasi pribadi sebelum Tugas diterima.</p>
-<p>Detail kontak pribadi atau tautan pihak ketiga tidak boleh dibagikan di area publik mana pun di situs, termasuk dalam komentar dan lampiran. Detail kontak pribadi dan tautan pihak ketiga mencakup, namun tidak terbatas pada, situs web bisnis, Facebook, LinkedIn, Twitter, email pribadi, nomor telepon, alamat, atau situs web pribadi.</p>
-<p>Setiap upaya untuk berbagi informasi pribadi sebelum penawaran diterima tidak akan ditoleransi. Pengguna yang melanggar panduan ini akan memiliki akun mereka ditangguhkan atau dibatalkan.</p>`,
+  /* ── Section 2 — Berbagi informasi pribadi secara publik ──── */
+  "community.s2.heading": "2. Berbagi informasi pribadi secara publik",
+  "community.s2.body": `<p>Untuk melindungi keselamatan dan keamanan Anda, Anda hanya boleh membagikan informasi kontak pribadi <strong>setelah</strong> Poster menerima tawaran Anda. Ini dapat dilakukan melalui sistem pesan pribadi kami.</p>
+<p>Pengguna <strong>tidak boleh</strong> membagikan informasi pribadi sebelum Tugas diterima.</p>
+<p>Detail kontak pribadi atau tautan pihak ketiga tidak boleh dibagikan di area publik situs mana pun termasuk dalam komentar dan lampiran apa pun. Detail kontak pribadi dan tautan pihak ketiga termasuk, namun tidak terbatas pada, situs web bisnis, Facebook, LinkedIn, Twitter, email pribadi, nomor telepon, alamat, atau situs web pribadi.</p>
+<p>Setiap upaya untuk membagikan informasi pribadi sebelum penawaran diterima tidak akan ditoleransi. Pengguna yang melanggar pedoman ini akan ditangguhkan atau dibatalkan akunnya.</p>`,
 
-  /* ── Section 3 — Unacceptable Behaviours ───────────────────── */
-  "community.s3.heading": "3. Perilaku yang Tidak Dapat Diterima",
-  "community.s3.body": `<p>SmartTasker mendorong toleransi, kesopanan, dan saling menghormati. Kami tidak mentoleransi perilaku negatif berikut terhadap anggota lain Komunitas SmartTasker atau tim kami:</p>
+  /* ── Section 3 — Perilaku yang tidak dapat diterima ────────── */
+  "community.s3.heading": "3. Perilaku yang tidak dapat diterima",
+  "community.s3.body": `<p>SmartTasker mendorong toleransi, kesopanan, dan saling menghormati. Kami tidak mentolerir perilaku negatif berikut terhadap anggota Komunitas SmartTasker lainnya atau tim kami:</p>
 <ul>
   <li>
     <strong>Kebencian atau kekerasan</strong><br>
-    Komentar atau tindakan yang mempromosikan kebencian atau kekerasan terhadap kelompok atau orang tertentu, termasuk perwakilan SmartTasker mana pun, tidak akan ditoleransi. Konten rasis atau perilaku untuk memicu rasisme juga tidak diizinkan. Semua perilaku agresif, termasuk sumpah serapah, ancaman verbal, bahasa atau tindakan mengancam, dan segala bentuk kekerasan dilarang.
+    Komentar atau tindakan yang mempromosikan kebencian atau kekerasan terhadap kelompok atau orang tertentu, termasuk perwakilan SmartTasker, tidak akan ditoleransi. Konten atau perilaku rasis untuk menghasut rasisme juga tidak diizinkan. Semua perilaku agresif, termasuk umpatan, ancaman verbal, bahasa atau tindakan yang mengancam dan segala bentuk kekerasan dilarang.
   </li>
   <li>
     <strong>Diskriminasi</strong><br>
-    Komentar yang merendahkan anggota komunitas mana pun, atau mengandung kata-kata kasar dalam konteks serangan/penghinaan pribadi, tidak akan ditoleransi.
+    Komentar yang menghina anggota komunitas mana pun, atau mengandung kata-kata vulgar yang digunakan dalam konteks serangan/penghinaan pribadi, tidak akan ditoleransi.
   </li>
   <li>
     <strong>Pelecehan</strong><br>
-    Tindakan atau komentar yang dapat menimbulkan kesusahan atau membahayakan anggota komunitas lain tidak diizinkan. Ini dapat mencakup gangguan terus-menerus, siksaan, intimidasi, atau komunikasi yang bertujuan mempengaruhi penawaran anggota lain, yang semuanya sangat tidak diizinkan.
+    Tindakan atau komentar yang dapat menyebabkan kesusahan atau membahayakan anggota komunitas lainnya tidak diperbolehkan. Ini mungkin termasuk gangguan, siksaan, intimidasi, atau komunikasi yang terus-menerus yang ditujukan untuk memengaruhi penawaran anggota lain, yang semuanya tidak diperbolehkan sama sekali.
   </li>
   <li>
     <strong>Perilaku ilegal</strong><br>
@@ -272,138 +253,129 @@ Object.assign(i18n.id, {
   </li>
   <li>
     <strong>Trolling</strong><br>
-    Tugas dan komentar yang dianggap trolling atau tidak pantas dilarang. Komentar yang tidak relevan atau bersifat provokatif untuk menghasut anggota komunitas lain juga tidak diizinkan.
+    Tugas dan komentar yang dianggap trolling atau tidak pantas dilarang. Komentar yang bersifat off-topic atau menghasut untuk memanggil anggota komunitas lain juga tidak diperbolehkan.
   </li>
 </ul>`,
 
-  /* ── Section 4 — Unsupported Practices ─────────────────────── */
-  "community.s4.heading": "4. Praktik yang Tidak Didukung",
-  "community.s4.body": `<p>Kami mendukung mempertemukan orang-orang. Kami akan selalu mengambil tindakan terhadap aktivitas apa pun yang membahayakan terciptanya lingkungan yang adil, transparan, dan terpercaya.</p>
-<p><strong>Kegiatan Tugas yang Dibatasi meliputi:</strong></p>
+  /* ── Section 4 — Praktik yang tidak didukung ───────────────── */
+  "community.s4.heading": "4. Praktik yang tidak didukung",
+  "community.s4.body": `<p>Kami mendukung menyatukan orang. Kami akan selalu mengambil tindakan terhadap aktivitas apa pun yang membahayakan penciptaan lingkungan yang adil, transparan, dan dapat dipercaya.</p>
+<p><strong>Aktivitas Tugas Terbatas meliputi:</strong></p>
 <ul>
-  <li>Ulasan SmartTasker yang palsu</li>
+  <li>Ulasan SmartTasker palsu</li>
   <li>Meningkatkan profil publik secara artifisial</li>
   <li>Memanen informasi anggota</li>
-  <li>Kegiatan terkait perolehan prospek (lead generation)</li>
-  <li>Tidak ada Tugas yang berkaitan dengan alkohol</li>
+  <li>Aktivitas terkait perolehan prospek</li>
+  <li>Tidak ada Tugas terkait alkohol</li>
 </ul>
-<p><strong>Membocorkan Tugas ke Luar Platform</strong></p>
-<p>Membawa tugas ke luar platform SmartTasker tidak didukung. Setiap Tasker harus mendapatkan kesempatan yang adil dalam mengajukan penawaran, dan mencegah kemampuan Tasker lain untuk melakukan itu menciptakan lingkungan yang tidak adil.</p>
-<p>Membawa tugas ke luar platform mungkin tampak seperti menghemat uang pada Biaya Layanan Tasker, namun hal itu akan menyebabkan akun Anda dibatalkan dan dengan demikian Anda akan kehilangan akses ke platform yang memberikan potensi penghasilan.</p>
-<p>Pengguna dapat membatalkan tugas sebagai bagian dari upaya membawa tugas ke luar platform. Berulang kali membatalkan tugas dapat mengakibatkan Anda mendapatkan penilaian bintang yang buruk dan ulasan profil yang berdampak pada kemampuan Anda memenangkan pekerjaan, atau mengakibatkan akun Anda ditangguhkan atau diblokir.</p>`,
+<p><strong>Bocor Tugas Di Luar Platform</strong></p>
+<p>Mengambil tugas dari platform SmartTasker tidak didukung. Setiap Tasker harus memiliki kesempatan yang adil dalam hal mengajukan penawaran dan mencegah kemampuan Tasker lain untuk melakukan hal itu menciptakan lingkungan yang tidak adil.</p>
+<p>Mengambil tugas dari platform mungkin tampak seperti Anda menghemat uang untuk Biaya Layanan Tasker, namun itu akan menyebabkan akun Anda dibatalkan dan dengan demikian Anda akan kehilangan akses ke platform yang memberi Anda potensi pendapatan.</p>
+<p>Pengguna dapat membatalkan tugas sebagai bagian dari upaya untuk mengambil tugas dari platform. Membatalkan tugas berulang kali dapat mengakibatkan Anda mendapatkan peringkat bintang dan tinjauan profil yang buruk yang memengaruhi kemampuan Anda untuk memenangkan pekerjaan atau mengakibatkan akun Anda ditangguhkan atau diblokir.</p>`,
 
-  /* ── Section 5 — Pricing, Fees and Payouts ─────────────────── */
-  /* LEGAL REVIEW REQUIRED: Jumlah biaya dalam AUD — konsultan hukum Indonesia untuk mengkonfirmasi ekuivalen IDR dan perlakuan pajak yang berlaku (PPN, PPh) serta kepatuhan terhadap regulasi OJK/Bank Indonesia */
-  "community.s5.heading": "5. Harga, Biaya, dan Pembayaran",
-  "community.s5.body": `<p>Penting untuk memahami cara kerja harga dan pembayaran di SmartTasker.</p>
-<ul>
-  <li><strong>Harga penawaran</strong> Ketika Anda membuat penawaran, itu harus mencerminkan total jumlah untuk tugas tersebut. Penawaran tidak boleh berbasis per jam, per unit, atau berupa kutipan. Kutipan parsial yang menyebutkan negosiasi harga lebih lanjut di luar platform juga tidak diizinkan.</li>
-  <li><strong>Tidak ada pembayaran parsial</strong> Setiap penawaran yang dibuat untuk tugas Anda harus mencakup seluruh lingkup tugas. Ketika Anda menerima penawaran, itulah jumlah akhir yang wajib Anda bayar (selain Biaya Pemesanan). Tugas yang menawarkan pembayaran parsial, termasuk tugas berbasis penjualan dan komisi, tidak diizinkan dan akan dimoderasi dan/atau dihapus.</li>
-  <li><strong>Rekening Escrow</strong> Demi alasan keamanan, pembayaran tunai tidak didukung di platform SmartTasker. Sebaliknya, untuk memastikan Anda dibayar penuh, SmartTasker menyimpan dana tugas yang diterima dari poster secara aman hingga Anda menandai tugas sebagai selesai. Dana disimpan dalam rekening escrow oleh mitra kami, Stripe. Ini memastikan pembayaran disimpan dengan aman dan dibayarkan penuh saat Tugas selesai.</li>
-  <li><strong>Detail perbankan yang akurat</strong> Untuk memastikan kelancaran pembayaran dana, pastikan detail perbankan Anda selalu mutakhir di Pengaturan Akun Anda.</li>
-  <li><strong>Biaya Pembatalan</strong> Sebagaimana diatur dalam kebijakan pembatalan SmartTasker di bawah ini, jika Anda membatalkan tugas setelah Tasker menugaskannya kepada Anda dan dinyatakan bertanggung jawab atas pembatalan tersebut, Anda akan dikenakan Biaya Pembatalan yang akan dipotong dari pembayaran berikutnya.</li>
-</ul>
-<p><strong>Biaya Layanan Tasker</strong></p>
-<p>Di SmartTasker kami percaya pada transparansi. Itulah mengapa biaya kami tersedia dan mudah dipahami. Biaya layanan Tasker kami biasanya 25% lebih murah dari pesaing kami.</p>
-<p>Biaya Layanan Tasker kami dikenakan pada saat penyelesaian tugas dan dipotong dari pembayaran Tasker.</p>
-<p>Tasker mencapai tingkat kinerja berdasarkan berapa banyak yang telah mereka peroleh dalam 30 hari terakhir. Biaya layanan tergantung pada Tingkat.</p>
-<ul>
-  <li><strong>Task Starter</strong> adalah pengguna yang telah memperoleh antara $0 dan $799 dalam 30 hari terakhir. Biaya layanan untuk tingkat ini adalah 2,95% + $2,55 ditambah GST.</li>
-  <li><strong>Task Pro</strong> adalah pengguna yang telah memperoleh antara $800 dan $2.499 dalam 30 hari terakhir. Biaya layanan untuk tingkat ini adalah 2,95% + $2,55 ditambah GST.</li>
-  <li><strong>Task Expert</strong> adalah pengguna yang telah memperoleh antara $2.500 dan $4.999 dalam 30 hari terakhir. Biaya layanan untuk tingkat ini adalah 2,95% + $2,55 ditambah GST.</li>
-  <li><strong>Task Master</strong> adalah pengguna yang telah memperoleh lebih dari $5.000 dalam 30 hari terakhir. Biaya layanan untuk tingkat ini adalah 1,95% + $2,55 ditambah GST.</li>
-</ul>
-<p><strong>Biaya Poster</strong></p>
-<p><strong>Biaya Pemesanan</strong> SmartTasker mengenakan Biaya Pemesanan $0 kepada poster untuk pembuatan dan pendaftaran Tugas.</p>
-<p><strong>Biaya Transaksi Milestone</strong> SmartTasker mengenakan biaya transaksi kecil untuk memproses dan mengelola pembayaran milestone. Biaya transaksi ini dikenakan pada Pembayaran Milestone kedua dan kemudian pada semua Pembayaran Milestone berikutnya untuk tugas tersebut. Biaya dihitung sebagai:</p>
-<ul>
-  <li>2% dari biaya Milestone ditambah GST</li>
-  <li>Contoh: Poster menerima penawaran Tugas sebesar $5.000 dan memilih untuk membayar melalui 2 Pembayaran Milestone. Pembayaran Milestone pertama adalah biaya Milestone $2.500 + Biaya Pemesanan $25 + GST. Untuk Pembayaran Milestone kedua, biayanya adalah biaya Milestone $2.500 + biaya transaksi 2% sebesar $50 + GST.</li>
-</ul>`,
-
-  /* ── Section 6 — Cancellation Policy ───────────────────────── */
-  /* LEGAL REVIEW REQUIRED: Struktur biaya pembatalan dan penggunaan penyedia escrow (Stripe) perlu dikonfirmasi kepatuhannya terhadap regulasi OJK/Bank Indonesia dan hukum perlindungan konsumen Indonesia */
+  /* ── Section 6 — Kebijakan Pembatalan SmartTasker ──────────── */
   "community.s6.heading": "6. Kebijakan Pembatalan SmartTasker",
   "community.s6.body": `<p>Di SmartTasker, kami ingin mempertahankan marketplace yang konsisten dan andal untuk semua Poster dan Tasker.</p>
-<p>Kebijakan pembatalan yang jelas dan adil membantu melindungi baik Poster maupun Tasker dan memungkinkan kami menetapkan ekspektasi yang jelas tentang apa yang terjadi ketika tugas dibatalkan.</p>
-<p><strong>Tanggung Jawab</strong></p>
-<p>Ketika menggunakan platform SmartTasker, kami mengharapkan setiap Poster dan Tasker yang kami hargai untuk menjunjung tanggung jawab tertentu. Tugas yang dibatalkan dapat memicu biaya tertentu (lihat Layanan dan Biaya) yang harus dibayar tergantung pada siapa yang bertanggung jawab atas pembatalan.</p>
+<p>Kebijakan pembatalan yang jelas dan adil membantu melindungi Poster dan Tasker dan memungkinkan kami menetapkan ekspektasi yang jelas tentang apa yang terjadi ketika tugas dibatalkan.</p>
+<p><strong>Tanggung jawab</strong></p>
+<p>Saat menggunakan platform SmartTasker, kami mengharapkan setiap Poster dan Tasker kami yang berharga untuk menjunjung tinggi tanggung jawab tertentu. Tugas yang dibatalkan dapat memicu biaya tertentu (lihat Layanan dan Biaya) yang dibayarkan tergantung pada siapa yang bertanggung jawab atas pembatalan tersebut.</p>
 <p><strong>Tanggung Jawab Tasker</strong></p>
-<p>Ketika menggunakan platform SmartTasker, kami mengharapkan Tasker menggunakan keahlian dan keterampilan mereka untuk dengan cermat membimbing Poster melalui perjalanan memiliki tugas yang dirumuskan, disepakati, dan diselesaikan. Perjalanan ini termasuk membantu Poster memahami keterampilan, ruang lingkup, waktu, dan harga tugas yang perlu diselesaikan, sekaligus menyelesaikan tugas secara profesional.</p>
+<p>Saat menggunakan platform SmartTasker, kami mengharapkan Tasker menggunakan keahlian dan keterampilan mereka untuk memandu Poster dengan hati-hati melalui perjalanan memiliki tugas yang tercakup, disetujui, dan diselesaikan. Perjalanan ini termasuk membantu Poster memahami keterampilan, ruang lingkup, waktu, dan harga tugas yang perlu mereka selesaikan, di samping menyelesaikan tugas secara profesional.</p>
 <p><strong>Tanggung Jawab Poster</strong></p>
-<p>Ketika menggunakan platform SmartTasker, kami mengharapkan Poster akan memberikan Tasker informasi sebanyak mungkin tentang tugas yang perlu Anda selesaikan. Ini termasuk mendeskripsikan tugas Anda dengan cukup detail, menyediakan gambar di mana itu membantu, dan menjawab pertanyaan apa pun yang mungkin dimiliki Tasker Anda. Pada akhirnya, semakin banyak informasi yang Anda berikan, semakin besar kemungkinan tugas akan diselesaikan sesuai harapan Anda.</p>
+<p>Saat menggunakan platform SmartTasker, kami berharap Poster akan memberikan informasi sebanyak mungkin kepada Tasker tentang tugas yang perlu Anda selesaikan. Ini termasuk mendeskripsikan tugas Anda dengan jumlah detail yang wajar, memberikan gambar yang membantu, dan menjawab pertanyaan apa pun yang mungkin dimiliki Tasker Anda. Pada akhirnya, semakin banyak informasi yang Anda berikan, semakin besar kemungkinan tugas tersebut akan diselesaikan sesuai harapan Anda.</p>
 <p><strong>Layanan &amp; Biaya</strong></p>
-<p><strong>Biaya Pemesanan</strong> Dalam hal Tasker membatalkan tugas Anda, dan Poster tidak bertanggung jawab atas pembatalan tersebut, Biaya Pemesanan akan dikembalikan kepada Poster. Pemrosesan pengembalian dana ke metode pembayaran asli Anda dapat memakan waktu hingga 10 hari kerja untuk diselesaikan.</p>
-<p><strong>Biaya Transaksi Milestone</strong> Dalam hal Tasker membatalkan tugas Anda dan Anda telah menyiapkan Pembayaran Milestone, Biaya Transaksi Milestone tidak akan dikembalikan kepada Poster. Ini adalah biaya yang ditahan oleh Penyedia Pembayaran kami dan tidak dapat dikembalikan.</p>
+<p><strong>Biaya Pemesanan</strong> Jika Tasker membatalkan tugas Anda, dan Poster tidak bertanggung jawab atas pembatalan tersebut, biaya Pemesanan akan dikembalikan ke Poster. Pemrosesan pengembalian dana Anda ke metode pembayaran asli, dapat memakan waktu hingga 10 hari kerja untuk menyelesaikannya.</p>
 <p><strong>Kebijakan Pembatalan</strong></p>
 <p><strong>Poster</strong></p>
-<p>Sebagai Poster, jika Anda memilih untuk membatalkan tugas, Anda akan mendapatkan pengembalian dana sebesar jumlah tugas yang dibatalkan. Sebagaimana dicatat dalam bagian Biaya Pemesanan di atas, Biaya Pemesanan tidak dapat dikembalikan. Anda juga akan dikenakan biaya transaksi 2%.</p>
+<p>Sebagai Poster, jika Anda memilih untuk membatalkan tugas, Anda akan dikembalikan jumlah tugas yang telah dibatalkan. Seperti yang disebutkan di bagian Biaya Pemesanan di atas, biaya Pemesanan tidak akan dapat dikembalikan.</p>
 <p><strong>Tasker</strong></p>
-<p>Sebagai Tasker, jika Anda memilih untuk membatalkan tugas, biaya pembatalan dapat dikenakan sebesar nilai Biaya Pemesanan yang dibayarkan oleh Poster untuk tugas yang bersangkutan. Anda juga akan dikenakan biaya transaksi 2%. Biaya pembatalan ini dapat secara otomatis dipotong dari pembayaran berikutnya.</p>
+<p>Sebagai Tasker, jika Anda memilih untuk membatalkan tugas, biaya pembatalan dapat dikenakan sebesar dengan nilai biaya Pemesanan yang dibayarkan oleh Poster untuk tugas yang relevan.</p>
 <p><strong>Pembatalan otomatis</strong></p>
-<p>Ketika Poster atau Tasker mengajukan permintaan untuk membatalkan tugas, permintaan tersebut dikirim ke pihak lain untuk disetujui atau ditolak. Dalam hal penerimaan atau penolakan tidak diterima oleh pihak tersebut dalam 48 jam sejak permintaan diajukan, tugas akan dibatalkan secara otomatis, dan suatu pihak akan bertanggung jawab atas biaya pembatalan berdasarkan informasi yang diberikan melalui permintaan pembatalan.</p>
+<p>Ketika Poster atau Tasker mengajukan permintaan untuk membatalkan tugas, permintaan dikirim ke pihak lain untuk menyetujui atau menolak pembatalan. Dalam hal penerimaan atau penolakan tidak diterima oleh pihak tersebut dalam waktu 48 jam sejak permintaan yang diajukan, tugas akan dibatalkan secara otomatis, dan suatu pihak akan bertanggung jawab atas biaya pembatalan berdasarkan informasi yang diberikan melalui permintaan pembatalan.</p>
 <p><strong>Pembatalan Berulang</strong></p>
-<p>Jika Anda berulang kali membatalkan tugas, akun Anda dapat ditangguhkan atas kebijaksanaan tunggal kami. Penangguhan akun dapat berkisar dari penangguhan sementara (misalnya penangguhan 1 minggu) hingga penangguhan permanen.</p>
-<p>Penilaian dan ulasan juga memberikan umpan balik berharga yang dapat membantu Poster dan Tasker dalam membuat keputusan tentang siapa yang akan bekerja sama. Poster dapat memberikan ulasan pada tugas yang dibatalkan sekaligus memberikan umpan balik kepada SmartTasker yang dapat kami tindaklanjuti atas kebijaksanaan tunggal kami. Pembatalan berdampak pada skor bintang dan skor keandalan Anda di marketplace yang dapat mengurangi kemampuan Anda memenangkan tugas.</p>`,
+<p>Jika Anda berulang kali membatalkan tugas, akun Anda dapat ditangguhkan atas kebijakan kami sendiri. Penangguhan akun dapat berkisar dari penangguhan sementara (yaitu penangguhan 1 minggu) hingga penangguhan permanen.</p>
+<p>Peringkat dan ulasan juga memberikan umpan balik berharga yang dapat membantu Poster dan Tasker menginformasikan keputusan mereka tentang orang mana yang akan bekerja sama. Poster dapat memberikan ulasan tentang tugas yang dibatalkan serta memberikan umpan balik kepada SmartTasker yang dapat kami tindaklanjuti atas kebijakan kami sendiri. Pembatalan memengaruhi peringkat bintang dan skor keandalan Anda di pasar yang dapat mengurangi kemampuan Anda untuk memenangkan tugas.</p>`,
 
-  /* ── Section 7 — Tasker Accountability and Your Reputation ── */
-  "community.s7.heading": "7. Akuntabilitas Tasker dan Reputasi Anda",
-  "community.s7.body": `<p>Kami mengharapkan semua Tasker untuk bertindak dengan kejujuran dan integritas setiap saat. Sebagai Tasker, Anda memiliki kewajiban kepada Poster untuk menyelesaikan Tugas sesuai yang dijanjikan.</p>
-<p>SmartTasker memiliki kebijakan yang sederhana namun penting untuk memastikan bahwa Anda sebagai Tasker memenuhi kontrak tasker Anda.</p>
-<p>Ini meliputi:</p>
+  /* ── Section 5 — Harga, biaya, dan pembayaran ──────────────── */
+  "community.s5.heading": "5. Harga, biaya, dan pembayaran",
+  "community.s5.body": `<p>Penting untuk memahami cara kerja penetapan harga dan pembayaran di SmartTasker.</p>
+<ul>
+  <li><strong>Harga penawaran</strong> Saat Anda mengajukan penawaran, itu harus mewakili jumlah total untuk tugas tersebut. Penawaran tidak boleh berdasarkan jam, unit, atau penawaran. Kutipan parsial yang menyebutkan negosiasi harga lebih lanjut di luar platform juga tidak diizinkan.</li>
+  <li><strong>Tidak ada pembayaran parsial</strong> Setiap penawaran yang dibuat untuk tugas Anda harus untuk cakupan penuh tugas. Saat Anda menerima penawaran, itu adalah jumlah akhir yang wajib Anda bayar (selain Biaya Pemesanan). Tugas yang menawarkan pembayaran sebagian, termasuk tugas berbasis penjualan dan komisi, tidak diizinkan dan akan dimoderasi dan/atau dihapus.</li>
+  <li><strong>Akun Escrow</strong> Untuk alasan keamanan, pembayaran tunai tidak didukung di platform SmartTasker. Sebagai gantinya, untuk memastikan bahwa Anda dibayar penuh, SmartTasker dengan aman menyimpan dana tugas yang diterima dari poster hingga Anda menandai tugas sebagai selesai. Dana disimpan di escrow oleh mitra kami Stripe. Ini memastikan bahwa pembayaran disimpan dengan aman dan dibayarkan penuh setelah menyelesaikan Tugas.</li>
+  <li><strong>Detail perbankan yang akurat</strong> Untuk memastikan pembayaran dana yang lancar, pastikan detail perbankan Anda selalu diperbarui di Pengaturan Akun Anda.</li>
+  <li><strong>Biaya Pembatalan</strong> Seperti yang ditetapkan dalam kebijakan pembatalan SmartTasker di bawah ini, jika Anda membatalkan tugas setelah Tasker menetapkannya kepada Anda dan dinyatakan bertanggung jawab atas pembatalan tersebut, Anda akan dikenakan Biaya Pembatalan yang akan dipotong dari pembayaran Anda berikutnya.</li>
+</ul>
+<p><strong>Biaya Layanan Tasker</strong></p>
+<p>Di SmartTasker, kami percaya pada transparansi. Itulah sebabnya biaya kami sudah tersedia dan mudah dipahami. Biaya layanan Tasker kami biasanya 25% lebih murah daripada pesaing kami.</p>
+<p>Biaya Layanan Tasker kami dibebankan pada penyelesaian tugas dan dipotong dari pembayaran Tasker.</p>
+<p>Tasker mencapai tingkatan kinerja berdasarkan berapa banyak yang mereka peroleh dalam 30 hari terakhir. Biaya layanan tergantung pada Tingkatan.</p>
+<ul>
+  <li><strong>Task Starter</strong> adalah pengguna yang telah mendapatkan penghasilan antara Rp0 dan Rp1.000.000 dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 20% + PPN.</li>
+  <li><strong>Task Pro</strong> adalah pengguna yang telah mendapatkan penghasilan antara Rp1.000.001 dan Rp1.500.000 dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 18% + PPN.</li>
+  <li><strong>Task Expert</strong> adalah pengguna yang telah mendapatkan penghasilan antara Rp1.500.001 dan Rp2.000.000 dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 20% + PPN.</li>
+  <li><strong>Task Master</strong> adalah pengguna yang telah mendapatkan Rp2.000.000 ke atas dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 20% + PPN.</li>
+</ul>
+<p><strong>Biaya Poster</strong></p>
+<p><strong>Biaya Pemesanan</strong> SmartTasker membebankan biaya Pemesanan ke poster untuk pembuatan dan daftar Tugas saat penawaran diterima. Biayanya sama dengan 10% dari Penawaran Tugas. Biaya Pemesanan minimum adalah Rp10.000 dan biaya maksimal adalah Rp50.000. Jumlah tersebut tidak termasuk PPN.</p>`,
+
+  /* ── Section 7 — Akuntabilitas tasker dan reputasi Anda ────── */
+  "community.s7.heading": "7. Akuntabilitas tasker dan reputasi Anda",
+  "community.s7.body": `<p>Kami mengharapkan semua Tasker untuk bertindak dengan kejujuran dan integritas setiap saat. Sebagai Tasker, Anda memiliki kewajiban kepada Poster untuk menyelesaikan Tugas seperti yang dijanjikan.</p>
+<p>SmartTasker memiliki kebijakan sederhana namun penting untuk memastikan bahwa Anda Tasker memenuhi kontrak tasker Anda.</p>
+<p>Ini termasuk:</p>
 <ul>
   <li>
-    <strong>Penyelesaian tugas:</strong> Tasker diharapkan untuk melaksanakan layanan sebagaimana disepakati dengan Poster.
+    <strong>Pemenuhan tugas:</strong> Tasker diharapkan untuk melaksanakan layanan sesuai kesepakatan dengan Poster.
   </li>
   <li>
-    <strong>Sub-kontraktor</strong><br>
-    Jika Anda ditugaskan untuk tugas tersebut, Anda bertanggung jawab atas tindakan sub-kontraktor yang Anda atur untuk membantu Anda menyelesaikan Tugas.<br>
+    <strong>Sub-kontaktor</strong><br>
+    Jika Anda ditugaskan untuk tugas tersebut, Anda bertanggung jawab atas tindakan subkontraktor mana pun yang Anda atur untuk membantu Anda menyelesaikan Tugas.<br>
     Anda harus mendapatkan persetujuan Poster untuk mensubkontrakkan layanan apa pun.<br>
-    Untuk tugas yang diselesaikan secara langsung, Anda harus hadir untuk memeriksa bahwa persyaratan tugas terpenuhi meskipun Anda meminta sub-kontraktor lain untuk membantu tugas tersebut.
+    Untuk tugas yang diselesaikan secara langsung, Anda harus hadir untuk memeriksa apakah persyaratan tugas terpenuhi bahkan jika Anda meminta subkontraktor lain untuk membantu tugas tersebut.
   </li>
   <li>
     <strong>Ulasan</strong><br>
-    <strong>Penilaian dan Ulasan:</strong> Poster dapat memberikan ulasan pada semua tugas, termasuk tugas yang dibatalkan. Pembatalan mempengaruhi kemampuan Anda memenangkan pekerjaan di platform dengan mengurangi skor bintang dan keandalan Anda.
+    <strong>Peringkat dan Ulasan:</strong> Poster dapat memberikan ulasan pada semua tugas, termasuk tugas yang dibatalkan. Pembatalan memengaruhi kemampuan Anda untuk memenangkan pekerjaan di platform dengan mengurangi peringkat bintang dan skor keandalan Anda.
   </li>
   <li>
-    <strong>Penangguhan:</strong> Berulang kali membatalkan tugas dapat mengakibatkan akun Anda ditangguhkan. Penangguhan akun dapat berkisar dari penangguhan sementara hingga pembatalan akun secara permanen.
+    <strong>Penangguhan:</strong> Membatalkan tugas berulang kali dapat mengakibatkan akun Anda ditangguhkan. Penangguhan akun dapat berkisar dari penangguhan sementara hingga pembatalan akun Anda secara permanen.
   </li>
 </ul>`,
 
-  /* ── Section 8 — Poster Accountability ─────────────────────── */
-  "community.s8.heading": "8. Akuntabilitas Poster",
-  "community.s8.body": `<p>Ketika Anda menerima penawaran Tasker pada tugas Anda, Anda dan Tasker tetap bertanggung jawab atas perilaku Anda di platform SmartTasker dan hasil tugas tersebut.</p>
+  /* ── Section 8 — Akuntabilitas poster ──────────────────────── */
+  "community.s8.heading": "8. Akuntabilitas poster",
+  "community.s8.body": `<p>Saat Anda menerima tawaran Tasker untuk tugas Anda, Anda dan Tasker tetap bertanggung jawab atas perilaku Anda di platform SmartTasker dan hasil tugas.</p>
 <ul>
-  <li><strong>Pengalaman platform yang buruk:</strong> Kami mendorong perilaku baik bagi semua pengguna platform kami. Baik Tasker maupun Poster dapat memberikan ulasan satu sama lain – termasuk terkait tugas yang dibatalkan.</li>
-  <li><strong>Penangguhan:</strong> Berulang kali membatalkan tugas dan perilaku buruk lainnya yang melanggar Panduan ini dapat mengakibatkan akun Anda ditangguhkan. Penangguhan akun dapat berkisar dari penangguhan sementara hingga pembatalan akun secara permanen.</li>
+  <li><strong>Pengalaman platform yang buruk:</strong> Kami mendorong perilaku yang baik untuk semua pengguna platform kami. Baik Tasker maupun Poster dapat memberikan ulasan satu sama lain – termasuk sehubungan dengan tugas yang dibatalkan.</li>
+  <li><strong>Penangguhan:</strong> Berulang kali membatalkan tugas dan perilaku buruk lainnya yang melanggar Pedoman ini dapat mengakibatkan akun Anda ditangguhkan. Penangguhan akun dapat berkisar dari penangguhan sementara hingga pembatalan akun Anda secara permanen.</li>
 </ul>`,
 
-  /* ── Section 9 — Account Eligibility ───────────────────────── */
-  /* LEGAL REVIEW REQUIRED: Referensi "persyaratan hukum untuk membuat kontrak" mengacu pada hukum kontrak Australia; konsultan hukum Indonesia untuk melokalisasi sesuai KUHPerdata dan regulasi Indonesia yang berlaku mengenai usia minimum kontrak */
-  "community.s9.heading": "9. Kelayakan Akun",
-  "community.s9.body": `<p>Semua Poster perlu memenuhi persyaratan berikut untuk membuka akun:</p>
+  /* ── Section 9 — Kelayakan akun ────────────────────────────── */
+  "community.s9.heading": "9. Kelayakan akun",
+  "community.s9.body": `<p>Semua Poster harus memenuhi persyaratan berikut untuk membuka akun:</p>
 <ul>
-  <li><strong>18 tahun ke atas</strong> Semua anggota komunitas SmartTasker harus berusia 18 tahun ke atas. Ini adalah persyaratan hukum untuk mengadakan kontrak hukum dengan SmartTasker. SmartTasker berhak meminta bukti usia.</li>
-  <li><strong>Hak kerja yang sah</strong> Semua Tasker harus secara legal berhak untuk melaksanakan tugas.</li>
-  <li><strong>Tidak ada akun duplikat</strong> Setiap anggota Komunitas SmartTasker hanya boleh memiliki satu akun di platform. Karena akun Anda mencerminkan reputasi Anda di marketplace dan mewakili keterampilan serta kemampuan Anda, akun duplikat yang mencoba menyembunyikan riwayat anggota akan segera dihapus. Ini berarti semua konten yang diposting oleh akun tambahan atau duplikat akan dihapus dan kontrak tugas terkait akan dibatalkan.</li>
+  <li><strong>18 tahun atau lebih</strong> Semua anggota komunitas SmartTasker harus berusia 18 tahun atau lebih. Ini adalah persyaratan hukum untuk menandatangani kontrak hukum dengan SmartTasker. SmartTasker berhak meminta bukti usia.</li>
+  <li><strong>Hak kerja yang sah</strong> Semua Tasker harus berhak secara hukum untuk melakukan tugas tersebut.</li>
+  <li><strong>Tidak ada akun duplikat</strong> Setiap anggota Komunitas SmartTasker hanya boleh memiliki satu akun di platform. Karena akun Anda mencerminkan reputasi Anda di pasar dan mewakili keterampilan dan kemampuan Anda, setiap akun duplikat yang mencoba menyamarkan riwayat anggota akan segera dihapus. Artinya, semua konten yang diposting oleh akun tambahan atau duplikat akan dihapus dan kontrak tugas terkait akan dibatalkan.</li>
 </ul>`,
 
-  /* ── Section 10 — Account Administration ───────────────────── */
-  "community.s10.heading": "10. Administrasi Akun",
-  "community.s10.body": `<p>Berikut adalah beberapa informasi lebih lanjut mengenai akun Pengguna:</p>
+  /* ── Section 10 — Administrasi akun ────────────────────────── */
+  "community.s10.heading": "10. Administrasi akun",
+  "community.s10.body": `<p>Berikut ini adalah beberapa informasi lebih lanjut mengenai akun Pengguna:</p>
 <ul>
-  <li><strong>Tidak ada transfer akun</strong> Akun Anda adalah tanggung jawab Anda dan Anda harus menjaga kontrolnya. Akun tidak boleh dipindahkan ke orang lain karena akun dan ulasan Anda mencerminkan keterampilan dan kemampuan Anda.</li>
-  <li><strong>Tidak ada akun duplikat</strong> Tasker hanya boleh memiliki satu akun di platform. Karena akun Anda mencerminkan reputasi Anda di marketplace dan mewakili keterampilan serta kemampuan Anda, akun duplikat yang mencoba menyembunyikan riwayat anggota akan segera dihapus dan dilarang dari pembuatan akun apa pun di masa mendatang.</li>
+  <li><strong>Tidak ada transfer akun</strong> Akun Anda adalah tanggung jawab Anda dan Anda harus tetap mengendalikannya. Itu tidak boleh ditransfer ke orang lain karena akun dan ulasan Anda mencerminkan keterampilan dan kemampuan Anda.</li>
+  <li><strong>Tidak ada akun duplikat</strong> Tasker hanya boleh memiliki satu akun di platform. Karena akun Anda mencerminkan reputasi Anda di pasar dan mewakili keterampilan dan kemampuan Anda, setiap akun duplikat yang mencoba menyamarkan riwayat anggota akan segera dihapus dan dilarang dari pembuatan akun di masa mendatang.</li>
 </ul>`,
 
-  /* ── Section 11 — Identity on SmartTasker ──────────────────── */
+  /* ── Section 11 — Identitas di SmartTasker ─────────────────── */
   "community.s11.heading": "11. Identitas di SmartTasker",
-  "community.s11.body": `<p>SmartTasker mendorong transparansi, akuntabilitas, dan saling menghormati. Ini membantu menjadikan SmartTasker lingkungan yang positif dan aman. Untuk membantu menumbuhkan kepercayaan dalam komunitas, semua Pengguna diwajibkan memiliki foto profil dan mencantumkan nama asli mereka.</p>
-<p>Foto dan nama palsu atau sembarangan tidak diizinkan. Pengguna yang tidak memiliki foto profil atau nama yang akurat sesuai standar SmartTasker akan diminta untuk memperbarui detail mereka agar dapat terus menggunakan situs kami.</p>
+  "community.s11.body": `<p>SmartTasker mendorong transparansi, akuntabilitas, dan saling menghormati. Ini membantu menjadikan SmartTasker lingkungan yang positif dan aman. Untuk membantu menumbuhkan kepercayaan di komunitas, semua Pengguna diharuskan memiliki foto profil dan menyertakan nama resmi mereka.</p>
+<p>Foto dan nama palsu atau lain-lain tidak diizinkan. Pengguna yang tidak memiliki foto profil atau nama yang akurat yang memenuhi standar SmartTasker akan diminta untuk memperbarui detail mereka untuk terus menggunakan situs kami.</p>
 <p><strong>Standar profil SmartTasker</strong></p>
 <ul>
   <li><strong>Nama</strong> Nama asli Anda sebagaimana dikonfirmasi oleh dokumen identifikasi Anda (paspor, SIM, dll).</li>
-  <li><strong>Foto profil</strong> Foto profil tampak depan yang jelas dari wajah anggota, sehingga mudah dikenali oleh anggota lain dan menunjukkan siapa Anda.</li>
+  <li><strong>Foto profil</strong> Foto profil wajah anggota yang jelas, sehingga mudah dikenali oleh anggota lain dan menunjukkan siapa Anda.</li>
 </ul>`,
 
 });
