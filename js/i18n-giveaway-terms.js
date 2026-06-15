@@ -1,12 +1,12 @@
 /**
- * SmartTasker Indonesia — Honda Vario 160 Giveaway Terms i18n Dictionary
+ * SmartTasker Indonesia — Honda Vario 160 CBS Giveaway Terms i18n Dictionary
  * Page: giveaway-terms.html
  *
  * Usage: loaded BEFORE js/main.js so Object.assign merges into the global i18n object.
  *
  * Adaptation notes applied throughout:
  *   - No Australian source page — this is a new document created for the
- *     SmartTasker Indonesia Honda Vario 160 giveaway.
+ *     SmartTasker Indonesia Honda Vario 160 CBS giveaway.
  *   - All substantive competition terms are PLACEHOLDER — pending client's
  *     final competition terms and Indonesian legal review.
  *   - smarttasker.id used throughout (not smarttasker.au)
@@ -23,12 +23,12 @@ Object.assign(i18n.en, {
   /* ── Page draft notice ─────────────────────────────────────── */
 
   /* ── Page hero ─────────────────────────────────────────────── */
-  "gterms.hero.title": "Honda Vario 160 Giveaway — Terms & Conditions",
+  "gterms.hero.title": "Honda Vario 160 CBS Giveaway — Terms & Conditions",
 
   /* ── Preamble ───────────────────────────────────────────────── */
   "gterms.preamble.heading": "Important Notice",
   "gterms.preamble.body": `
-<p>These Terms &amp; Conditions (<strong>"Terms"</strong>) govern the Honda Vario 160 Giveaway (<strong>"Competition"</strong>) conducted by SmartTasker Indonesia via <a href="https://smarttasker.id">smarttasker.id</a>.</p>`,
+<p>These Terms &amp; Conditions (<strong>"Terms"</strong>) govern the Honda Vario 160 CBS Giveaway (<strong>"Competition"</strong>) conducted by SmartTasker Indonesia via <a href="https://smarttasker.id">smarttasker.id</a>.</p>`,
 
   /* ── Section 1 — Promoter ───────────────────────────────────── */
   "gterms.s1.heading": "1. Promoter",
@@ -62,7 +62,7 @@ Object.assign(i18n.en, {
   <li>Visit <a href="https://smarttasker.id">smarttasker.id</a> during the Entry Period;</li>
   <li>Complete the waitlist registration form, providing: full name, valid email address, WhatsApp phone number, and location (city / province);</li>
   <li>Select a registration role (Customer, Tasker, or Both); and</li>
-  <li>Check the box confirming entry into the Honda Vario 160 giveaway.</li>
+  <li>Check the box confirming entry into the Honda Vario 160 CBS giveaway.</li>
 </ol>
 <p>Only one (1) entry per person is permitted. Multiple entries from the same individual will be disqualified.</p>
 <p>No purchase is necessary to enter. Providing false or misleading information will result in disqualification.</p>`,
@@ -70,7 +70,7 @@ Object.assign(i18n.en, {
   /* ── Section 5 — Prize ──────────────────────────────────────── */
   "gterms.s5.heading": "5. Prize",
   "gterms.s5.body": `<!-- LEGAL REVIEW REQUIRED: Indonesian counsel to confirm whether prize value triggers any reporting or withholding-tax obligations under Indonesian tax law (PPh Pasal 4 ayat 2 or applicable gift/prize tax regulations) -->
-<p>The prize consists of one (1) Honda Vario 160 motorcycle (<strong>"Prize"</strong>).</p>
+<p>The prize consists of one (1) Honda Vario 160 CBS motorcycle (<strong>"Prize"</strong>).</p>
 
 <p>The Prize:</p>
 <ul>
@@ -143,12 +143,12 @@ Object.assign(i18n.id, {
   /* ── Page draft notice ─────────────────────────────────────── */
 
   /* ── Page hero ─────────────────────────────────────────────── */
-  "gterms.hero.title": "Giveaway Honda Vario 160 — Syarat & Ketentuan",
+  "gterms.hero.title": "Giveaway Honda Vario 160 CBS — Syarat & Ketentuan",
 
   /* ── Preamble ───────────────────────────────────────────────── */
   "gterms.preamble.heading": "Pemberitahuan Penting",
   "gterms.preamble.body": `
-<p>Syarat &amp; Ketentuan ini (<strong>"Ketentuan"</strong>) mengatur Giveaway Honda Vario 160 (<strong>"Kompetisi"</strong>) yang diselenggarakan oleh SmartTasker Indonesia melalui <a href="https://smarttasker.id">smarttasker.id</a>.</p>`,
+<p>Syarat &amp; Ketentuan ini (<strong>"Ketentuan"</strong>) mengatur Giveaway Honda Vario 160 CBS (<strong>"Kompetisi"</strong>) yang diselenggarakan oleh SmartTasker Indonesia melalui <a href="https://smarttasker.id">smarttasker.id</a>.</p>`,
 
   /* ── Section 1 — Promoter ───────────────────────────────────── */
   "gterms.s1.heading": "1. Penyelenggara",
@@ -182,7 +182,7 @@ Object.assign(i18n.id, {
   <li>Mengunjungi <a href="https://smarttasker.id">smarttasker.id</a> selama Periode Pendaftaran;</li>
   <li>Mengisi formulir pendaftaran waitlist dengan memberikan: nama lengkap, alamat email yang valid, nomor telepon WhatsApp, dan lokasi (kota / provinsi);</li>
   <li>Memilih peran pendaftaran (Pelanggan, Tasker, atau Keduanya); dan</li>
-  <li>Mencentang kotak yang mengkonfirmasi keikutsertaan dalam giveaway Honda Vario 160.</li>
+  <li>Mencentang kotak yang mengkonfirmasi keikutsertaan dalam giveaway Honda Vario 160 CBS.</li>
 </ol>
 <p>Hanya satu (1) pendaftaran per orang yang diperbolehkan. Beberapa pendaftaran dari individu yang sama akan didiskualifikasi.</p>
 <p>Tidak diperlukan pembelian untuk mengikuti. Memberikan informasi yang salah atau menyesatkan akan mengakibatkan diskualifikasi.</p>`,
@@ -190,7 +190,7 @@ Object.assign(i18n.id, {
   /* ── Section 5 — Prize ──────────────────────────────────────── */
   "gterms.s5.heading": "5. Hadiah",
   "gterms.s5.body": `<!-- LEGAL REVIEW REQUIRED: Indonesian counsel to confirm whether prize value triggers any reporting or withholding-tax obligations under Indonesian tax law (PPh Pasal 4 ayat 2 or applicable gift/prize tax regulations) -->
-<p>Hadiah berupa satu (1) unit sepeda motor Honda Vario 160 (<strong>"Hadiah"</strong>).</p>
+<p>Hadiah berupa satu (1) unit sepeda motor Honda Vario 160 CBS (<strong>"Hadiah"</strong>).</p>
 <p>Nilai retail Hadiah: <strong>[AKAN DILOKALISASI — estimasi harga retail dalam IDR akan dikonfirmasi oleh klien]</strong>.</p>
 <p>Hadiah:</p>
 <ul>
